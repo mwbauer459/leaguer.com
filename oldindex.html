@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Test Website</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<section class="notification-bar">
+	<div class="wrapper" id="notification-bar-wrapper">
+		<div class="notification-bar" id="logo-background">
+			<a href="index.html">
+				<img class="logo" src="logos/Logo.png" height="100%">
+			</a>
+		</div>
+		<form id="form" role="search">
+			<input type="search" id="query" name="q" placeholder="search..." aria-label="Search through site content">
+			<button class ="search">&#x1F50D </button>
+			<script src="search.js"></script>
+		</form>
+		<div class ="login-wrapper" id="login-wrapper">
+			placeholder
+		</div>
+	</div>
+	
+		
+	</div>
+</section>
+<div class="body-outline">
+
+	<div class="tab">
+		
+		<ul >
+			<li ><a  href="page1.html">Page1</a></li>
+			<li ><a  href="page2.html">Page2</li>
+			<li ><a  href="https://www.twitch.tv">Twitch</li>	
+			<li ><a  href="https://www.youtube.com">YouTube</li>	
+		</ul>
+		
+			
+
+	</div> 
+	<div class="body-center">
+		
+
+		<div class="slideshow-container">
+			
+			<a class="prev" onclick="shiftSlide(1)">&#10094</a>
+
+			<div class="slides fade">
+				<div class="numberText">1 / 5</div>
+				<img class="bannerImage" src="images/lake.jpg">
+				<div class="bannerText">Lake Hokatu in Norway</div> 
+			</div>
+
+			<div class="slides fade">
+				<div class="numberText">2 / 5</div>
+				<img class="bannerImage" src="images/library.jpg">
+				<div class="bannerText">Library</div> 
+			</div>
+
+			<div class="slides fade">
+				<div class="numberText">3 / 5</div>
+				<img class="bannerImage" src="images/code.jpg" >
+				<div class="bannerText">Coding is fun</div> 
+			</div>
+
+			<div class="slides fade">
+				<div class="numberText">4 / 5</div>
+				<img class="bannerImage" src="images/motherboard.jpg">
+				<div class="bannerText">Original modern motherboard</div> 
+			</div>
+
+			<div class="slides fade">
+				<div class="numberText">5 / 5</div>
+				<img class="bannerImage"  src="images/transistor.jpg">
+				<div class="bannerText">No idea what this is</div> 
+			</div>
+
+			 <!-- onClick listeners for forward and back buttons -->
+			<a class="next" onclick="shiftSlide(-1)">&#10095</a>
+			
+
+		</div>
+
+		<br>
+
+		<div class="dots" style="text-align: center;">
+			<span class="bannerDot" onclick="currentSlide(1)"></span>
+			<span class="bannerDot" onclick="currentSlide(2)"></span>
+			<span class="bannerDot" onclick="currentSlide(3)"></span>
+
+		</div>
+		<script src="index.js"></script>
+
+		<div class="column-wrapper">
+			<div class="column-left">
+				placeholder
+			</div>
+			<div class="column-right">
+				gooble
+			</div>
+		</div>
+		
+	</div> 
+</div>
+</body>

@@ -3,27 +3,16 @@
 }
 
 body{
+	background-image:  url(images/evoaudience.jpeg);
+	background-repeat: no-repeat;
+	background-size: 110% auto;
+	background-attachment: local;
+	z-index: -2000;
 	
-	padding: 0px;
-	margin: 0px;
-	display: block;
 
 }
 
-div.background-container {
 
-	width: 100%;
-	height: 100vh;
-	display: block;
-}
-
-.background-container img{
-	height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-
-}
 
 
 /********************* Navigation Bar ************************/
@@ -91,7 +80,7 @@ div.tab{
 	display: flex;
     justify-content: center;
 	align-items: flex-end;
-	width: 860px;
+	width: 900px;
 	height: 20%;
 	right: 0%;
 	list-style-type:none;
@@ -117,7 +106,7 @@ div.tab{
 	font-size: 30px;
 	margin-bottom: -5px;
 	font-weight: bold;
-	margin-right: -5px;
+	margin-right: 0px;
 
 	 
 	
@@ -147,7 +136,6 @@ div.tab{
 
  .dropdown select{
 	display: none;
-
  }
 
 
@@ -195,10 +183,10 @@ div.login-wrapper{
 
 /*******************Body and Body Outline *********************/
 div.body-outline{
-	position: relative;
-	height:100%;
+	position: absolute;
     width: 100%;
-	min-height: 1400px;
+     min-width: 1000px;
+	top: 80px;
 	left: 0px;
     display: flex;
     flex-direction: column;
@@ -207,18 +195,141 @@ div.body-outline{
 }
 
 div.body-center{
-	max-width: 100%;
-	width: 100%;
-	height: 1400px;
+	max-width: 1000px;
+	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	background: rgba(0,0,0,.9);
 	border-radius: 25px;
 	
 }
+
+
+
+
+
+/* SlideShow */
+
+.slideshow-container {
+	margin-top: 0px;
+	max-width: 100%;
+	width: 100%;
+	/* background:rgba(0, 0, 0, .9); */
+	z-index: 2;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+  }
+
+.slides {
+	display: none;
+	object-fit: contain;
+	margin-top: 10px;
+	opacity: 1;
+	z-index: 5;
+	
+}
+
+.fade{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+  
+  @keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+
+.bannerImage{
+	
+	object-fit: contain;
+	height: 400px;
+	width: 516px;
+	opacity: 1;
+
+}
+
+.prev, .next {
+	cursor: grab;
+	position: relative;
+	top: 50%;
+	width: auto;
+	height: 50px;
+	margin-top: 22px;
+	padding: 16px;
+	color: lightgray;
+	font-weight: bold;
+  	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next{
+	margin-left: 200px;
+	margin-right: 0px;
+	border-radius: 3px 0 0 3px;
+}
+.prev{
+	margin-left: 0px;
+	margin-right: 200px;
+}
+
+.next:hover, .prev:hover{
+	background-color: rgba(0,0,0,0.8);
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+  }
+  
+/* Caption text */
+/* .bannerText {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+  
+  /* Number text (1/3 etc) */
+/* .numberText {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+} */ */
+
+.bannerDot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+	background-color: #717171;
+  }
+
 
 
   /* Columns */
@@ -247,66 +358,11 @@ div.body-center{
 
   }
 
-  .bounce {
-	position:absolute;
-	left:50%;
-	bottom:10px;
-	margin-top:-25px;
-	margin-left:-25px;
-	height:50px;
-	width:80px;
-	background: rgba(47, 47, 47, 0.7);
-	-moz-animation:bounce .7s infinite alternate;
-	-o-animation:bounce .7s infinite alternate;
-	animation:bounce .7s infinite alternate;
-  
-  }
-
-  
-  #scrollDown{
-	  height: 50px;
-	  width: 80px;
-	  background-color: rgba(47, 47, 47, 0.2);
-	  outline: none;
-	  border: none;
-  }
-
-  .body-center img{
-	  position: relative;
-	  height: 400px;
-	  object-position: center;
-  }
-  
-  
-  @-webkit-keyframes bounce {
-	0%       { bottom:0px; }
-	/* 50%      { bottom:15px; } */
-	100%     {bottom:30;}
-  }
-  
-   @-moz-keyframes bounce {
-	0%       { bottom:0px; }
-	50%      { bottom:15px; }
-	100%     {bottom:30;}
-  }
-  
-   @-o-keyframes bounce {
-	0%       { bottom:0px; }
-	50%      { bottom:15px; }
-	100%     {bottom:30;}
-  }
-  
-   @keyframes bounce {
-	0%       { bottom:0px; }
-	/* 50%      { bottom:15px; } */
-	100%     {bottom:30;}
-  }
-	  
 
 
 
   /************ MEDIA ***********/
-  @media (max-width: 1100px) {
+  @media (max-width: 960px) {
 	.tab ul     { display: none; }
 	.dropdown select { display: inline-block; }
   }
