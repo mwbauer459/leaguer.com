@@ -1,1 +1,1 @@
-Leaguer is a website aimed at providing the experience of participating in a league (think tennis, or gold) but for a wider range of interests, particularly video games.
+Leaguer is a website aimed at providing the experience of participating in a league to those who don't neccessarily participate in sports. The goal is to build leagues for things like chess, competetive video games, and non-competetive hobbies like hiking and knitting.
