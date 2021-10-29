@@ -1,4 +1,4 @@
-var elToScrollTo = document.getElementById('toScrollTo');
+var elToScrollTo = document.getElementById('midsection-img');
 
 
 function scroller(){

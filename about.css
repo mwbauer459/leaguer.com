@@ -265,56 +265,7 @@ form.form {
 
  }
 
- /*************** midsection ***************/
-
-
-div.midsection-container{
-	width: 100%;
-	height: 100%;
-	display: block;
-}
-
-
-.midsection-container embed{
-	height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-	position: relative;
-}
-
-.front-page-links-container{
-	width: 93.1%;
-	position: absolute;
-	height: 40%;
-	left: 3.4%;
-	bottom: 8%;
-	z-index: 2;
-	/* background-color:rgba(50, 223, 27, 0.7); */
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-
-}
-
-.front-page-links{
-	width: 23.5%;
-	height: 100%;
-	/* background-color: rgba(163, 24, 24, 0.7); */
-	z-index: 3;
-
-}
-.front-page-links:hover{
-	cursor: pointer;
-	border: solid rgb(216, 216, 216) 5px;
-}
-
-
-.front-page-link{
-	height: 100%;
-	width: 100%;
-
-}
+ 
 
  /************** footer ************/
 
@@ -390,32 +341,6 @@ div.body-center{
 }
 
 
-  /* Columns */
-
-  div.column-left{
-	  height: 800px;
-	  background-color: grey;
-	  padding: 10px;
-	  float: left;
-	  display: block;
-	  width: 650px;
-	  margin-right: 20px;
-	  border-radius: 25px;
-	  margin-top: 20px;
-  }
-
-  div.column-right{
-	  height: 800px;
-	  background-color: lightgray;
-	  padding: 10px;
-	  float: right;
-	  display: block;
-	  width: 300px;
-	  border-radius: 25px;
-	  margin-top: 20px;
-
-  }
-
   .bounce {
 	position:absolute;
 	left:50%;
@@ -431,14 +356,6 @@ div.body-center{
   
   }
 
-  
-  #scrollDown{
-	  height: 50px;
-	  width: 80px;
-	  background-color: rgba(47, 47, 47, 0.0);
-	  outline: none;
-	  border: none;
-  }
 
   .body-center img{
 	  position: relative;
@@ -446,34 +363,7 @@ div.body-center{
 	  object-position: center;
   }
   
-  
-  @-webkit-keyframes bounce {
-	0%       { bottom:0px; }
-	/* 50%      { bottom:15px; } */
-	100%     {bottom:30;}
-  }
-  
-   @-moz-keyframes bounce {
-	0%       { bottom:0px; }
-	50%      { bottom:15px; }
-	100%     {bottom:30;}
-  }
-  
-   @-o-keyframes bounce {
-	0%       { bottom:0px; }
-	50%      { bottom:15px; }
-	100%     {bottom:30;}
-  }
-  
-   @keyframes bounce {
-	0%       { bottom:0px; }
-	/* 50%      { bottom:15px; } */
-	100%     {bottom:30;}
-  }
-	  
-
-
-
+ 
   /************ MEDIA ***********/
   @media (max-width: 1100px) {
 	.tab ul     { display: none; }
